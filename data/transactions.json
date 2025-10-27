@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Salary",
+        "amount": 5000
+    },
+    {
+        "description": "Rent",
+        "amount": -1500
+    },
+    {
+        "description": "Groceries",
+        "amount": -300
+    },
+    {
+        "description": "Test Transaction",
+        "amount": 100.0
+    }
+]

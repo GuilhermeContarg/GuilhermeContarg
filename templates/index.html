@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial System</h1>
+
+        <!-- Display Current Balance -->
+        <div class="balance">
+            <h2>Current Balance: R$<span id="balance">0.00</span></h2>
+        </div>
+
+        <!-- Add New Transaction Form -->
+        <div class="add-transaction">
+            <h2>Add New Transaction</h2>
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" placeholder="Enter description" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" placeholder="Enter amount" step="0.01" required>
+                </div>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </div>
+
+        <!-- Transactions List -->
+        <div class="transactions">
+            <h2>Transactions</h2>
+            <ul id="transaction-list">
+                <!-- Transactions will be dynamically inserted here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
